@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rfc822");
+
         intent.putExtra(Intent.EXTRA_EMAIL,messageCorreo);
         intent.putExtra(Intent.EXTRA_SUBJECT,asunto.getText().toString());
         intent.putExtra(Intent.EXTRA_TEXT,leerDatosFormulario().toString());
